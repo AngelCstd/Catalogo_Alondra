@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Acrilico",
+    "img": "app/assets/acrilico.jpg",
+    "productos": [
+      {
+        "id": 3,
+        "name": "Acrilico",
+        "precio": 80,
+        "img": "app/assets/acrilico.jpg",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. Ex"
+      },
+      {
+        "id": 4,
+        "name": "Acetona mas chico",
+        "precio": 40,
+        "img": "app/assets/acrilico.jpg",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. E,"
+      }
+    ]
+  },
+  {
+    "name": "Antiseptico",
+    "img": "app/assets/antiseptico.jpg",
+    "productos": [
+      {
+        "id": 5,
+        "name": "Antiseptico",
+        "precio": 80,
+        "img": "app/assets/antiseptico.jpg",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. Ex"
+      },
+      {
+        "id": 6,
+        "name": "Acetona mas chico",
+        "precio": 40,
+        "img": "app/assets/antiseptico.jpg",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. E,"
+      }
+    ]
+  },
+  {
+    "name": "Adhesive",
+    "img": "app/assets/pegamento.jpg",
+    "productos": [
+      {
+        "id": 7,
+        "name": "Pegamento",
+        "precio": 80,
+        "img": "app/assets/pegamento.jpg",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. Ex"
+      },
+      {
+        "id": 8,
+        "name": "Acetona mas chico",
+        "precio": 40,
+        "img": "app/assets/pegamento.jpg",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. E,"
+      }
+    ]
+  },
+  {
+    "name": "Esmaltes",
+    "img": "app/assets/esmalte.jpg",
+    "productos": [
+      {
+        "id": 1,
+        "name": "Acetona",
+        "precio": 80,
+        "img": "app/assets/esmalte4.png",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. Ex"
+      },
+      {
+        "id": 2,
+        "name": "Acetona mas chico",
+        "precio": 40,
+        "img": "app/assets/esmalte4.png",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. E,"
+      }
+    ]
+  }  
+]
