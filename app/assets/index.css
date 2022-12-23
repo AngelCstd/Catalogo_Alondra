@@ -12,7 +12,8 @@
 }
 body{
     overflow-x: hidden;
-    background-color: #ffecefce;
+    /*AQUI CAMBIE EL COLOR ffecefce*/
+    background-color: deeppink;
 }
 /* Header */
 #header{ 
@@ -24,8 +25,8 @@ body{
     top: 0;
 }
 #header nav{
-    /*AQUI DEJE EL COLOR FFCACA*/
-    background-color: #FFCACA;
+    /*AQUI cambie EL COLOR FFCACA*/
+    background-color: #ffe0e4;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.21);
     display: flex;
@@ -83,7 +84,7 @@ div.categories{
     left: 10%;
     width: 90%;
     /*AQUI CAMBIE EL COLOR FFCACA*/
-    background-color: deeppink;
+    background-color: #ffe0e4;
     height: 50vw;
     border-radius: 35px 0 0 35px;
     display: grid;
@@ -117,7 +118,7 @@ a.productos{
 }
 div.productos{
     /*AQUI CAMBIE EL COLOR FFCACA*/
-    background-color: #f63e7b;
+    background-color: #ffe0e4;
     width: 90%;
     height: 45vw;
     border-radius: 20px;
