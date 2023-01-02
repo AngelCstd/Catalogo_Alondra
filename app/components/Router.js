@@ -1,15 +1,15 @@
 import { Categories } from "./Categories.js";
 import { ajax, ajaxSearch, ajaxSearchId } from "../helpers/ajax.js";
 import { Products } from "./Products.js";
-import { ProductDetails } from "./ProductDetails.js";
-
+import { Details } from "./Details.js";
+import { Carousel } from "./Carousel.js";
 /*
 Esta funcion pinta las rutas segun lo que tenga la url
 */
 export function Router() {
     const d = document,
         w = window,
-        $main = d.getElementById("main");
+        $main = d.getElementById("root");
 
     $main.innerHTML = null
 
@@ -65,9 +65,17 @@ export function Router() {
             una section con todos los datos del producto
         */
         let busqueda = hash.split('/')[hash.split('/').length - 1];
-        ajax({url:"urlPrueba",cbSucces: (caracteristicas)=>{
-            let product = ajaxSearchId(caracteristicas, busqueda);
-            $main.appendChild(ProductDetails(product))
+
+        ajax({url:"urlPrueba",cbSucces: (categoria)=>{
+            let product = ajaxSearchId(categoria, busqueda),
+            $section = document.createElement("section");
+
+            $section.classList.add("details")
+            $section.appendChild(Details(product))
+            $section.appendChild(Carousel(ajaxSearch(categoria, product.name.substring(2,5)).slice(0,5)))
+
+
+            $main.appendChild($section)
         }})
     }
     else if (hash.includes("#/search")) {
