@@ -83,7 +83,7 @@ a.categories{
 div.categories{
     overflow: hidden;
     position: relative;
-    left: 11%;
+    left: 10%;
     width: 90%;
     /*AQUI CAMBIE EL COLOR FFCACA #ffe0e4*/
     background-color: var(--dark-color);

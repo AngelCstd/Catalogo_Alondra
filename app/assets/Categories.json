@@ -1,25 +1,5 @@
 [
   {
-    "name": "Acrilico",
-    "img": "app/assets/acrilico.jpg",
-    "productos": [
-      {
-        "id": 3,
-        "name": "Acrilico",
-        "precio": 80,
-        "img": "app/assets/acrilico.jpg",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. Ex"
-      },
-      {
-        "id": 4,
-        "name": "Acetona mas chico",
-        "precio": 40,
-        "img": "app/assets/acrilico.jpg",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. E,"
-      }
-    ]
-  },
-  {
     "name": "Antiseptico",
     "img": "app/assets/antiseptico.jpg",
     "productos": [
@@ -35,6 +15,26 @@
         "name": "Acetona mas chico",
         "precio": 40,
         "img": "app/assets/antiseptico.jpg",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. E,"
+      }
+    ]
+  },
+  {
+    "name": "Acrilico",
+    "img": "app/assets/acrilico.jpg",
+    "productos": [
+      {
+        "id": 3,
+        "name": "Acrilico",
+        "precio": 80,
+        "img": "app/assets/acrilico.jpg",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. Ex"
+      },
+      {
+        "id": 4,
+        "name": "Acetona mas chico",
+        "precio": 40,
+        "img": "app/assets/acrilico.jpg",
         "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. E,"
       }
     ]
