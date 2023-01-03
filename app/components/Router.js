@@ -14,6 +14,7 @@ export function Router() {
         $main = d.getElementById("root");
 
     $main.innerHTML = null
+    document.querySelector("#header").style.backgroundColor = "#f8bbd0";
 
     let { hash } = location;
 
@@ -67,6 +68,7 @@ export function Router() {
             una section con todos los datos del producto
         */
         let busqueda = hash.split('/')[hash.split('/').length - 1];
+        document.querySelector("#header").style.backgroundColor = "";
 
         ajax({url:"urlPrueba",cbSucces: (categoria)=>{
             let product = ajaxSearchId(categoria, busqueda),
