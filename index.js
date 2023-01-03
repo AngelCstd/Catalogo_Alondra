@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", App)
 window.addEventListener("hashchange", App)
 
 document.addEventListener("click", (e) => {
-    if (!e.target.matches(".bi")) return false
-    document.querySelector("nav").classList.toggle("visible")
+    if (e.target.matches("header .bi")||e.target.matches("nav a")){
+        document.querySelector("nav").classList.toggle("visible")
+    }
 })
 
 document.addEventListener("submit", (e) => {

@@ -3,6 +3,7 @@ import { ajax, ajaxSearch, ajaxSearchId } from "../helpers/ajax.js";
 import { Products } from "./Products.js";
 import { Details } from "./Details.js";
 import { Carousel } from "./Carousel.js";
+import { Contacto } from "./Contacto.js";
 /*
 Esta funcion pinta las rutas segun lo que tenga la url
 */
@@ -71,6 +72,7 @@ export function Router() {
             $section = document.createElement("section");
 
             $section.classList.add("details")
+            $section.classList.add("container")
             $section.appendChild(Details(product))
             $section.appendChild(Carousel(ajaxSearch(categoria, product.name.substring(2,5)).slice(0,5)))
 
@@ -100,5 +102,9 @@ export function Router() {
                 $main.innerHTML = html;
             }
         })
+    }
+    else if (hash.includes("#/contacto")){
+        $main.innerHTML = Contacto();
+
     }
 }
