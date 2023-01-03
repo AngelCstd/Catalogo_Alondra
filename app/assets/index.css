@@ -240,6 +240,53 @@ li a .bi{
     font-size: 1.5rem;
     color: #000;
 }
+/* Preguntas frecuentes */
+#soporte{
+    display: grid;
+    gap: 4vh;
+    place-items: center;
+}
+#preguntasFrecuentes{
+    place-self: center;
+    font-size: 1.5rem;
+}
+details {
+    position: relative;
+    width: 90vw;
+    place-self: center;
+   color: #000;
+}
+details[open] {
+    z-index: 1;
+}
+summary {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: var(--dark-color);
+    list-style: none;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.121); */
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: left;
+    color: #000;
+}
+summary::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    right: -98%;
+    width: 2vw;
+    height: 2vw;
+    border-bottom: 1px solid currentColor;
+    border-left: 1px solid currentColor;
+    transform: rotate(-45deg) translate(-25%, 0%);
+    transform-origin: center center;
+    transition: transform ease-in-out 100ms
+}
+details p{
+    padding: 1rem;
+}
 @media (min-width: 319px) and (max-width: 359px) {
     *{
         font-size: 14px;

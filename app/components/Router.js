@@ -4,6 +4,7 @@ import { Products } from "./Products.js";
 import { Details } from "./Details.js";
 import { Carousel } from "./Carousel.js";
 import { Contacto } from "./Contacto.js";
+import { Soporte } from "./Soporte.js";
 /*
 Esta funcion pinta las rutas segun lo que tenga la url
 */
@@ -105,6 +106,14 @@ export function Router() {
     }
     else if (hash.includes("#/contacto")){
         $main.innerHTML = Contacto();
+
+    }
+    else if (hash.includes("#/preguntas")){
+        let $h4 = document.createElement("h4");
+        $h4.innerHTML = "Preguntas Frecuentes"
+        $h4.id = "preguntasFrecuentes";
+        $main.appendChild($h4)
+        $main.innerHTML += Soporte()
 
     }
 }
