@@ -18,7 +18,7 @@ export function Router() {
 
     let { hash } = location;
 
-    if (!hash || hash === "#/") {
+    if (!hash || hash === "#/catalogo") {
         /*muestra las categorias
 
         -mandamos a llamar a ajax
