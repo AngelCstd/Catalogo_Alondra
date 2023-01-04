@@ -1,6 +1,6 @@
 export function Contacto() {
     return `<div id="contacto" class="container">
-    <h3>Conoce nuestras sucursales</h3>
+    <h2>Conoce nuestras sucursales</h2>
     <div>
         <h4>PEÑA Y PEÑA</h4>
         <ul class="container">
