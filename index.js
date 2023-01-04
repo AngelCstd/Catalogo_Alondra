@@ -8,7 +8,7 @@ document.addEventListener("submit", (e) => {
     if (!e.target.matches(".search-form")) return false;
     e.preventDefault();
 
-    window.location.href = "https://angelcstd.github.io/catalogo.html"
+    window.location.href = "/Catalogo_Alondra/catalogo.html"
 
     localStorage.setItem("lsSearch", e.target.search.value)
     location.hash = `#/search?search=${e.target.search.value}`

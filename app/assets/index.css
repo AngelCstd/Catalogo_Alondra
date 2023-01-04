@@ -23,6 +23,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+h2, h1{
+    justify-self: center;
+    font-size: 1.5rem;
+}
+#root > p{
+    width: 90%;
+    justify-self: center;
+}
 /* Header */
 #header{ 
     width: 100%;
@@ -69,8 +77,8 @@ nav ul{
 }
 nav ul a{
     text-decoration: none;
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 1.8rem;
+    font-weight: 600;
     color: #000;
 }
 nav.visible{
@@ -249,7 +257,7 @@ li a .bi{
 /* Preguntas frecuentes */
 #soporte{
     display: grid;
-    gap: 4vh;
+    gap: 2vh;
     place-items: center;
 }
 #preguntasFrecuentes{
@@ -263,7 +271,8 @@ details {
    color: #000;
 }
 details[open] {
-    z-index: 1;
+    background-color: #e91e6273;
+    border-radius: 10px;
 }
 summary {
     padding: 0.5rem 1rem;
