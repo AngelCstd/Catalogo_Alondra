@@ -64,8 +64,7 @@ export function Router() {
         
         let query = localStorage.getItem("lsSearch"),
             html = "";
-            $title.innerHTML = query
-
+            $title.innerHTML = `Resultados de la busqueda ${query}`
         if (!query) return false;
 
         ajax({

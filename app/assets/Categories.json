@@ -1,82 +1,76 @@
 [
   {
-    "name": "Antiseptico",
-    "img": "app/assets/antiseptico.jpg",
+    "name": "Liquidos",
+    "img": "app/assets/esmalte4.png",
     "productos": [
       {
-        "id": 5,
-        "name": "Antiseptico",
+        "id": 6,
+        "name": "Acetona Alondra",
         "precio": 80,
-        "img": "app/assets/antiseptico.jpg",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. Ex"
+        "img": "app/assets/esmalte4.png",
+        "details": "1L $80 \n 500ml $45 \n 250ml $25"
       },
       {
-        "id": 6,
-        "name": "Acetona mas chico",
-        "precio": 40,
-        "img": "app/assets/antiseptico.jpg",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. E,"
+        "id": 7,
+        "name": "Removedor de cuticula",
+        "precio": 90,
+        "img": "app/assets/lcuticula.png",
+        "details": "1L $90 \n 500ml $60 \n 120ml $25"
+      },
+      {
+        "id": 8,
+        "name": "Limpia pincel",
+        "precio": 160,
+        "img": "app/assets/lpincel.png",
+        "details": "1L $160 \n 500ml $90 \n 120ml $40"
+      }
+    ]
+  },
+  {
+    "name": "Cover",
+    "img": "app/assets/cpink.png",
+    "productos": [
+      {
+        "id": 1,
+        "name": "Cover capuccino",
+        "precio": 80,
+        "img": "app/assets/ccapuccino.png",
+        "details": "1/2 Oz $45 \n 1 Oz $50 \n 2 Oz $80"
+      },
+      {
+        "id": 2,
+        "name": "Cover pink",
+        "precio": 80,
+        "img": "app/assets/cpink.png",
+        "details": "1/2 Oz $45 \n 1 Oz $50 \n 2 Oz $80"
+      },
+      {
+        "id": 3,
+        "name": "Cover natural skin",
+        "precio": 80,
+        "img": "app/assets/cnatural.png",
+        "details": "1/2 Oz $45 \n 1 Oz $50 \n 2 Oz $80"
       }
     ]
   },
   {
     "name": "Acrilico",
-    "img": "app/assets/acrilico.jpg",
+    "img": "app/assets/acrystal.png",
     "productos": [
-      {
-        "id": 3,
-        "name": "Acrilico",
-        "precio": 80,
-        "img": "app/assets/acrilico.jpg",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. Ex"
-      },
       {
         "id": 4,
-        "name": "Acetona mas chico",
-        "precio": 40,
-        "img": "app/assets/acrilico.jpg",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. E,"
-      }
-    ]
-  },
-  {
-    "name": "Adhesive",
-    "img": "app/assets/pegamento.jpg",
-    "productos": [
-      {
-        "id": 7,
-        "name": "Pegamento",
-        "precio": 80,
-        "img": "app/assets/pegamento.jpg",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. Ex"
+        "name": "Acrilico crystal",
+        "precio": 230,
+        "img": "app/assets/acrystal.png",
+        "details": "250g $230 \n 120g $150 \n 60g $70"
       },
       {
-        "id": 8,
-        "name": "Acetona mas chico",
-        "precio": 40,
-        "img": "app/assets/pegamento.jpg",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. E,"
+        "id": 5,
+        "name": "Acrilico Rosa",
+        "precio": 230,
+        "img": "app/assets/arosa.png",
+        "details": "250g $230 \n 120g $150 \n 60g $70"
       }
     ]
-  },
-  {
-    "name": "Esmaltes",
-    "img": "app/assets/esmalte.jpg",
-    "productos": [
-      {
-        "id": 1,
-        "name": "Acetona",
-        "precio": 80,
-        "img": "app/assets/esmalte4.png",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. Ex"
-      },
-      {
-        "id": 2,
-        "name": "Acetona mas chico",
-        "precio": 40,
-        "img": "app/assets/esmalte4.png",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi. E,"
-      }
-    ]
-  }  
+  } 
 ]
