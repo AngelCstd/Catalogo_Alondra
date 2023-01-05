@@ -1,6 +1,7 @@
 export function Details(props) {
     let {name, img, precio, details} = props,
-    $div = document.createElement("div")
+    $div = document.createElement("div"),
+    $p = creaPrecios(details);
     $div.classList.add("details")
 
     $div.innerHTML=`
@@ -8,9 +9,14 @@ export function Details(props) {
     <div>
         <h2>${name}</h2>
         <h3>$${precio}</h3>
-        <p>${details}</p>
+        <div>${$p}</div>
     </div>
     `
 
     return $div;
+}
+function creaPrecios(arra) {
+    let precios = "";
+    arra.forEach(e => precios +=`<p>${e}</p><br>`)
+    return precios
 }

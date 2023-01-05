@@ -166,7 +166,7 @@ div.productos img{
     object-fit: cover;
     border-radius: 20px;
 }
-div.productos div{
+div.productos > div{
     justify-self: start;
     width: 96%;
     height: 90%;
@@ -176,9 +176,10 @@ div.productos div{
     grid-template-rows: auto 90%;
     row-gap: 5%;
     color: #000;
+    /* border: 1px solid black; */
 }
 div.productos .name{
-    font-size: 1rem;
+    font-size: 1.2rem;
     place-self: start;
 }
 div.productos .precio{
@@ -186,9 +187,9 @@ div.productos .precio{
     align-self: start;
     font-size: 1rem;
 }
-div.productos .details{
+div.productos .details p{
     width: 100%;
-    font-size: .8rem;
+    font-size: 1rem;
     grid-area: 2/1/3/3;
 } 
 /* Details */
@@ -220,17 +221,19 @@ div.details h3{
     font-size: 1.5rem;
 }
 div.details p{
-    font-size: 1rem;
-    text-align: justify;
-    hyphens: auto;
+    font-size: 1.2rem;
+    /* text-align: justify; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    /* hyphens: auto; */
     width: 100%;
-    grid-area: 2/1/3/3;
+    /* grid-area: 2/1/3/3; */
 }
 /*Carousel*/
 div.carousel{
     display: grid;
     gap: 2vh;
-    width: 100%;
+    width: 100%; 
 }
 div.carousel > h4{
     text-align: center;
