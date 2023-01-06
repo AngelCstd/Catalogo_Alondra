@@ -31,7 +31,8 @@ export function Router() {
     else if (hash.includes("#/category")) {
 
         
-        let busqueda = hash.split('/')[hash.split('/').length - 1];
+        let hashNoFiltrado = hash.split('/')[hash.split('/').length - 1],
+        busqueda = hashNoFiltrado.split('%20').join(' ')
         $title.innerHTML = busqueda
 
         ajax({
