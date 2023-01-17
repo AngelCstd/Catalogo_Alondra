@@ -5,10 +5,12 @@ export function Products(props) {
         <div class="productos">
             <img src="${props.img}" alt="">
             <div>
-                <h4 class="name">${props.name}</h3>
+                <h4 class="name">${props.name}</h4>
                 <h4 class="precio">$${props.precio}</h4>
                 <div class="details">${$p}</div>
             </div>
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-heart-fill"></i>
         </div>
     </a>
     `)

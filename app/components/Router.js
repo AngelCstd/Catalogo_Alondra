@@ -1,13 +1,15 @@
 import { Categories } from "./Categories.js";
-import { ajax, ajaxSearch, ajaxSearchId } from "../helpers/ajax.js";
+import { ajax } from "../helpers/ajax.js";
 import { Products } from "./Products.js";
 import { Details } from "./Details.js";
 import { Carousel } from "./Carousel.js";
 import { Contacto } from "./Contacto.js";
+import { api } from "../helpers/api.js";
 
 export function Router() {
     const d = document,
         w = window,
+        pages = 1,
         $main = d.getElementById("root"),
         $title = d.createElement("h2");
 
@@ -18,12 +20,12 @@ export function Router() {
 
     let { hash } = location;
 
-    if (!hash || hash === "#/catalogo") {
+    if (!hash || hash === "#/marcas") {
         $title.innerHTML = "Catalogo"
         ajax({
-            url: "urlprueba", cbSucces: (categorias) => {
+            url: api.MARCAS+pages, cbSucces: (marcas) => {
                 let html = "";
-                categorias.forEach((categoria) => html += Categories(categoria));
+                marcas.forEach((marcas) => html += Categories(marcas));
                 $main.innerHTML += html;
             }
         })
@@ -66,7 +68,7 @@ export function Router() {
         let query = localStorage.getItem("lsSearch"),
             html = "";
             $title.innerHTML = `Resultados de la busqueda ${query}`
-        if (!query) return false;
+        if (!query) return false; 
 
         ajax({
             url: "urlPrueba", cbSucces: (busqueda) => {
