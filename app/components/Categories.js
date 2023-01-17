@@ -1,12 +1,11 @@
 // Este lo tenemos que cambiar para que retorne codigo html y meterlo al inner del main por cada categoria enviada
 export function Categories(props) {
-    let {name, img} = props
 return (`
-<a href="#/category/${name}" class="categories">
+<a href="#/category/${props.nombre}" class="categories">
     <div class="categories">
-        <img src="${img}" alt="">
+        <img src="${props.img}" alt="">
         <div>
-            <h3>${name}</h3>
+            <h3>${props.nombre}</h3>
             <p>→</p>
         </div>
     </div>
